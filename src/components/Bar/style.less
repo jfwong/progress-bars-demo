@@ -1,0 +1,36 @@
+.bar {
+  position: relative;
+  border: 1px solid black;
+  height: 30px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &.disabled-bar {
+    opacity: 0.4;
+  }
+}
+
+.bar-content {
+  display: flex;
+  align-items: center;
+  height: inherit;
+
+  & > span {
+    flex-basis: 33%;
+    text-align: center;
+
+    &:first-child {
+      margin-left: 8px;
+      text-align: left;
+    }
+  }
+}
+
+.progress {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  transition: width 0.3s;
+}
