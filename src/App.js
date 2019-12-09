@@ -124,8 +124,6 @@ const App = () => {
               />
             ))}
 
-            <Bar />
-
             {/* PROGRESS CONTROL PANEL */}
             <div className="update-progress-buttons">
               <ButtonGroup>
